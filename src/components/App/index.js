@@ -24,7 +24,7 @@ class App extends Component {
   // (e.g. display different options like the Navigation component).
 
   componentDidMount() {
-    this.listener = this.props.firebase.auth.onAuthStatechanged(
+    this.listener = this.props.firebase.auth.onAuthStateChanged(
       authUser => {
         authUser
           ? this.setState({ authUser })
@@ -32,7 +32,7 @@ class App extends Component {
       },
     );
   }
-
+  
   componentWillUnmount() {
     // We also want to avoid memory leaks that lead to performance issues, so we'll remove the listener if the component unmounts.
     this.listener();
