@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Navigation from "../Navigation";
-import LandingPage from "../Landing";
 import SignUpPage from "../SignUp";
 import SignInPage from "../SignIn";
 import PasswordForgetPage from "../PasswordForget";
@@ -23,7 +22,6 @@ const App = () => (
         {/* If a route matches a path prop, the respective component will be displayed; thus, all the page components in the App component are exchangeable by changing the route,
         but the Navigation component stays fixed independently of any route changes. This is how you enable a static frame with various components (e.g. Navigation) around your 
         dynamic pages driven by routes. It's all made possible by React's powerful composition. */}
-        <Route exact path={ROUTES.LANDING} component={LandingPage} />
         <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
         <Route path={ROUTES.SIGN_IN} component={SignInPage} />
         <Route
