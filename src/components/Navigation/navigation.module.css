@@ -1,0 +1,42 @@
+.navigationContainer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .navigationContainer a {
+    display: block;
+    color: #8b97a1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans" , "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    float: left;
+  }
+  
+  .navigationContainer a:hover:not(.active) {
+    color: #61dafb;
+  }
+  
+  .navigationContainer .active {
+    background-color: #20232a;
+  }
+
+  .navigationContainer button{
+      margin-top: 17px;
+      margin-left: 10px;
+      background-color: transparent;
+      color: #8b97a1;
+      font-size: 21px;
+      border: none;
+      border-radius: 4px;
+  }
+
+  .navigationContainer button:hover:not(.active) {
+    color: #61dafb;
+  }

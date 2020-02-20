@@ -1,0 +1,62 @@
+.signInContainer {
+    text-align: center;
+    background-color: #446671;
+    width: 500px;
+    height: 300px;
+    margin: 125px auto;
+    padding-top: 20px;
+    border-radius: 25px;
+    color: #8b97a1;
+}
+
+.signInContainer a {
+    color: #8b97a1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #8b97a1;
+  -webkit-box-shadow: 0 0 0px 1000px #446671 inset;
+  box-shadow: 0;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-size-adjust: 18px;
+}
+
+.signInContainer input {
+    margin-bottom: 25px;
+    font-size: 18px;
+    text-align: center;
+    border: 0px solid;
+    border-bottom: 2px solid #4d8899;
+    background-color: #446671;
+    height: 25 px;
+    color: #8b97a1;
+    width: 225px;
+}
+
+.signInContainer input:focus, textarea:focus, select:focus {
+    outline: none;
+    width: 250px;
+}
+
+::placeholder {
+    color:#8b97a1;
+
+}
+
+.signInContainer button{
+    font-size: 18px;
+    background-color: #5dcceb;
+    border: 0px solid;
+    color: white;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+}

@@ -11,14 +11,14 @@ import * as ROUTES from "../../constants/routes";
 // import { withFirebase } from '../Firebase';
 // import { AuthUserContext } from '../Session';
 import { withAuthentication } from '../Session';
+import styles from './app.module.css';
 
 const App = () => (
   // Router makes it possible to navigate from url to url on the client-side application without another request to a web server for every route change.
   // The application is only fetched once from a web server, after which all routing is done on the client-side with React Router.
+  <div className={styles.appContainer}>
     <Router>
-      <div>
         <Navigation />
-        <hr />
         {/* If a route matches a path prop, the respective component will be displayed; thus, all the page components in the App component are exchangeable by changing the route,
         but the Navigation component stays fixed independently of any route changes. This is how you enable a static frame with various components (e.g. Navigation) around your 
         dynamic pages driven by routes. It's all made possible by React's powerful composition. */}
@@ -31,8 +31,8 @@ const App = () => (
         <Route path={ROUTES.HOME} component={HomePage} />
         <Route path={ROUTES.ACCOUNT} component={AccountPage} />
         <Route path={ROUTES.ADMIN} component={AdminPage} />
-      </div>
     </Router>
+  </div>
 );
 
 export default withAuthentication(App);
